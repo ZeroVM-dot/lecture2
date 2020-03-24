@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My new webpage!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style media="screen">
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+   <h1 class="center"><span class="badge badge-secondary">{% block head %}{% endblock %}</span></h1>
+   <table class="table table-dark">
+     <thead>
+       <tr>
+         <th>Program:</th>
+         <th>Link:</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr><td>Flask</td></tr>
+       <tr><td>HTML</td></tr>
+       <tr><td>Bootstrap</td><td><a href="https://getbootstrap.com" class="badge badge-primary">Bootstrap website</a></td>
+       </tr>
+     </tbody>
+   </table>
+   {% block nav %}{% endblock %}
+   <div class="alert alert-success" role="alert">
+     Application create by: ZeroVM-dot
+   </div>
+</body>
+</html>
